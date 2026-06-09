@@ -1,65 +1,196 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 
+import {
+  FaSchool,
+  FaBook,
+  FaFlask,
+  FaDesktop,
+  FaBus,
+  FaFutbol,
+  FaShieldAlt,
+  FaLeaf,
+} from "react-icons/fa";
+
+
+  
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <>
+     
+
+      {/* Motto Section */}
+      <section className="hero">
+        <h1>Knowledge • Discipline • Excellence</h1>
+        <p>Empowering Young Minds for a Brighter Tomorrow</p>
+      </section>
+
+      {/* Admission Announcement */}
+      <section className="announcement">
+  <div className="scroll-text">
+    🎓 Admissions Open for Academic Year 2026-27 | Limited Seats Available 🎓
+  </div>
+</section>
+
+      {/* Welcome Section */}
+      <section className="welcome">
+
+  <div className="welcome-content">
+
+    <h3 className="welcome-text">Welcome to</h3>
+
+    <h2 className="school-name">
+      Sri Ramajayam Matric Higher Secondary School
+    </h2>
+
+    <h3 className="since-text">Since 2001</h3>
+
+    <p>
+      “A Man of purity in nature with a strong will power” was born in a poor family.
+      Due to his hardwork and continuous effort he over came a lot of problems and
+      sufferings in his day to day life which pushed him to become a great person in
+      this society.
+    </p>
+
+    <p>
+      He earned a title of “A Man Rising From Hardwork” awarded by “Shivaji Academy”
+      such a Hardworker realized the difficulties of poor and the intention to help
+      the poor motivated him to become the founder of “SRI RAMAJAYAM EDUCATIONAL TRUST”
+      in the year 2000 along with three trustees.
+    </p>
+
+  </div>
+
+  <div className="welcome-image">
+    <Image
+      src="/image/school.jpeg"
+      alt="School"
+      width={600}
+      height={400}
+    />
+  </div>
+
+</section>
+
+<section className="counter-section">
+
+  <div className="counter-card">
+    <h2>50+</h2>
+    <p>Experienced Staff</p>
+  </div>
+
+  <div className="counter-card">
+    <h2>15+</h2>
+    <p>Awards</p>
+  </div>
+
+  <div className="counter-card">
+    <h2>100%</h2>
+    <p>Academic Excellence</p>
+  </div>
+
+  <div className="counter-card">
+    <h2>2000+</h2>
+    <p>Students Enrolled</p>
+  </div>
+
+  <div className="counter-card">
+    <h2>5000+</h2>
+    <p>Alumni Network</p>
+  </div>
+
+</section>
+<section className="facilities-section">
+
+  <h2 className="facilities-heading">Our Facilities</h2>
+
+  <div className="facilities-grid">
+
+    <div className="facility-card">
+      <FaSchool className="facility-icon" />
+      <h3>Smart Classrooms</h3>
     </div>
+
+    <div className="facility-card">
+      <FaBook className="facility-icon" />
+      <h3>Digital Library</h3>
+    </div>
+
+    <div className="facility-card">
+      <FaFlask className="facility-icon" />
+      <h3>Science Laboratories</h3>
+    </div>
+
+    <div className="facility-card">
+      <FaDesktop className="facility-icon" />
+      <h3>Computer Laboratory</h3>
+    </div>
+
+    <div className="facility-card">
+      <FaBus className="facility-icon" />
+      <h3>Transport Facility</h3>
+    </div>
+
+    <div className="facility-card">
+      <FaFutbol className="facility-icon" />
+      <h3>Sports & Playground</h3>
+    </div>
+
+    <div className="facility-card">
+      <FaShieldAlt className="facility-icon" />
+      <h3>CCTV Secured Campus</h3>
+    </div>
+
+    <div className="facility-card">
+      <FaLeaf className="facility-icon" />
+      <h3>Green Campus Environment</h3>
+    </div>
+
+  </div>
+
+</section>
+<footer className="footer">
+
+  <div className="footer-container">
+
+    <div className="footer-section">
+      <h3>Sri Ramajayam Matric Higher Secondary School</h3>
+      <p>
+        Empowering young minds with knowledge, discipline, and values
+        since 2001.
+      </p>
+    </div>
+
+    <div className="footer-section">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><Link href="/">Home</Link></li>
+      <li><Link href="/about">About Us</Link></li>
+      <li><Link href="/academics">Academics</Link></li>
+      <li><Link href="/facilities">Facilities</Link></li>
+      <li><Link href="/admissions">Admissions</Link></li>
+      <li><Link href="/contact">Contact Us</Link></li>
+      </ul>
+    </div>
+
+    <div className="footer-section">
+      <h3>Contact Us</h3>
+
+      <p>📍 Tiruvannamalai, Tamil Nadu</p>
+      <p>📞 +91 99655 27501</p>
+      <p>☎️ +91 94433 29983</p>
+      <p>✉️ sriramajayammhss@gmail.com</p>
+    </div>
+
+    </div>
+
+    <div className="footer-bottom">
+    © 2026 Sri Ramajayam Matric Higher Secondary School. All Rights Reserved.
+  </div>
+
+</footer>
+    </>
   );
 }
