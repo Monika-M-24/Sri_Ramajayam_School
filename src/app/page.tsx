@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import ParticlesBackground from "@/components/ParticlesBackground";
+import ParticlesBackground from "../components/ParticlesBackground";
 
 import {
   FaSchool,
