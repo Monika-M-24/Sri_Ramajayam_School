@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 import {
   FaSchool,
@@ -18,7 +19,7 @@ import {
 export default function Home() {
   return (
     <>
-     
+  <ParticlesBackground />
 
       {/* Motto Section */}
       <section className="hero">
@@ -191,6 +192,8 @@ export default function Home() {
   </div>
 
 </footer>
-    </>
+
+
+</>
   );
 }
