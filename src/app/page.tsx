@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 import {
   FaSchool,
   FaBook,
@@ -18,6 +19,7 @@ import {
 export default function Home() {
   return (
     <>
+
 
       {/* Motto Section */}
       <section className="hero">
