@@ -113,7 +113,7 @@ export default function Home() {
 
     <div className="facility-card">
       <FaBook className="facility-icon" />
-      <h3>Digital Library</h3>
+      <h3>Library</h3>
     </div>
 
     <div className="facility-card">
