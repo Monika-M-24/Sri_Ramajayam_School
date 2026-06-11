@@ -2,6 +2,8 @@ export default function AboutPage() {
   return (
     <div className="about-page">
 
+      {/* FIRST CARD */}
+
       <div className="about-glass-card">
 
         <div className="about-content">
@@ -40,6 +42,44 @@ export default function AboutPage() {
             src="/image/chairman.jpeg"
             alt="Chairman"
           />
+
+          <h3 className="chairman-name">
+            Mr. C. ELUMALAI, M.A
+          </h3>
+
+          <p className="chairman-designation">
+            Chairman
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* SECOND CARD */}
+
+      <div className="about-glass-card second-card">
+
+        <div className="about-photo">
+
+          <img
+            src="/image/about.jpeg"
+            alt="Correspondent"
+          />
+
+          <h3 className="chairman-name">
+            SRI RAMAJAYAM MATRIC. HR. SEC. SCHOOL
+          </h3>
+
+
+        </div>
+
+        <div className="about-content">
+
+          <h2>SRI RAMAJAYAM MATRIC. HR. SEC. SCHOOL. POLUR</h2>
+<br></br>
+          <p>
+            The Trust started first “SRI RAMAJAYAM NURSERY AND PRIMARY SCHOOL” for the classes LKG to VIth standard in the year 2001, but now the school has been developed with good infrastructure facilities and extra curicular activities like Computer class, Music class, Hindi class, Yoga class, Karate, etc., for standard up to XII.
+          </p>
 
         </div>
 
